@@ -1,7 +1,7 @@
 
 # vim-lavender
 
-This is a vim colorscheme whitch only works on `has('gui_running')` or `&termguicolors` .
+This is a vim colorscheme which only works on `has('gui_running')` or `&termguicolors` .
 
 ## screenshots
 
