@@ -51,8 +51,8 @@ highlight CursorLineNr       gui=NONE           guifg=#666666 guibg=#e7e7e7
 highlight QuickFixLine       gui=NONE           guifg=#666666 guibg=#cccc22
 highlight Search             gui=NONE           guifg=#666666 guibg=#cccc22
 highlight IncSearch          gui=NONE           guifg=#666666 guibg=#cccc22
-highlight Cursor             gui=NONE           guifg=#ffffff guibg=#323639
-highlight Visual             gui=NONE           guifg=NONE    guibg=#eeeeee
+highlight Cursor             gui=NONE           guifg=#ffffff guibg=#aa33aa
+highlight Visual             gui=NONE           guifg=NONE    guibg=#eeccee
 
 highlight Comment            gui=NONE           guifg=#cccccc guibg=NONE
 highlight SpecialKey         gui=NONE           guifg=#ddaadd guibg=NONE
