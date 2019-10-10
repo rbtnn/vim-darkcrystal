@@ -108,7 +108,7 @@ if g:labender_devmode && (&background == 'dark')
     highlight PmenuSbar          gui=NONE           guifg=NONE    guibg=#0e0e0e
     highlight PmenuThumb         gui=NONE           guifg=NONE    guibg=#3e3e3e
 
-    highlight Folded             gui=UNDERLINE      guifg=#333333 guibg=NONE
+    highlight Folded             gui=UNDERLINE      guifg=#555555 guibg=NONE
     highlight FoldColumn         gui=NONE           guifg=#777777 guibg=#e7e7e7
     highlight LineNr             gui=NONE           guifg=#aaaaaa guibg=#e7e7e7
     highlight CursorLineNr       gui=NONE           guifg=#666666 guibg=#e7e7e7
@@ -119,7 +119,7 @@ if g:labender_devmode && (&background == 'dark')
     highlight Cursor             gui=NONE           guifg=#ffffff guibg=#aa33aa
     highlight Visual             gui=NONE           guifg=NONE    guibg=#eeccee
 
-    highlight Comment            gui=NONE           guifg=#333333 guibg=NONE
+    highlight Comment            gui=NONE           guifg=#555555 guibg=NONE
     highlight SpecialKey         gui=NONE           guifg=#552255 guibg=NONE
     highlight NonText            gui=NONE           guifg=#cccccc guibg=NONE
 
