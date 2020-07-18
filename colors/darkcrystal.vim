@@ -39,7 +39,7 @@ highlight!      CursorIM           gui=NONE           guifg=#000000 guibg=#cc000
 
 highlight!      Pmenu              gui=NONE           guifg=#888888 guibg=#323232
 highlight!      PmenuSbar          gui=NONE           guifg=#000000 guibg=#323232
-highlight!      PmenuSel           gui=BOLD           guifg=#ffffff guibg=#323232
+highlight!      PmenuSel           gui=BOLD           guifg=#04aadd guibg=#323232
 highlight!      PmenuThumb         gui=NONE           guifg=NONE    guibg=#ffffff
 
 highlight!      StatusLine         gui=NONE           guifg=#888888 guibg=#333333
@@ -47,29 +47,33 @@ highlight!      StatusLineNC       gui=NONE           guifg=#888888 guibg=#33333
 highlight!      StatusLineTerm     gui=NONE           guifg=#888888 guibg=#333333
 highlight!      StatusLineTermNC   gui=NONE           guifg=#888888 guibg=#33333b
 
-highlight!      TabLine            gui=NONE           guifg=#888888 guibg=#000000
-highlight!      TabLineFill        gui=NONE           guifg=NONE    guibg=#000000
-highlight!      TabLineSel         gui=BOLD           guifg=#000000 guibg=NONE
+highlight!      TabLine            gui=NONE           guifg=#888888 guibg=#212121
+highlight!      TabLineFill        gui=NONE           guifg=NONE    guibg=#212121
+highlight!      TabLineSel         gui=BOLD           guifg=#04aadd guibg=#212121
 
 highlight!      DiffAdd            gui=NONE           guifg=#118811 guibg=NONE
 highlight!      DiffChange         gui=BOLD           guifg=#993399 guibg=NONE
 highlight!      DiffDelete         gui=NONE           guifg=#dd2c2c guibg=NONE
 highlight!      DiffText           gui=BOLD,UNDERLINE guifg=#993399 guibg=NONE
 
-"highlight!      CursorLineNr       gui=BOLD           guifg=#7799aa guibg=#bbddee
+highlight!      CursorLine         gui=UNDERLINE      guifg=NONE    guibg=NONE
+highlight!      CursorLineNr       gui=BOLD           guifg=#04aadd guibg=#373737
 highlight!      EndOfBuffer        gui=NONE           guifg=#333333 guibg=#171717
-"highlight!      LineNr             gui=NONE           guifg=#999999 guibg=#ddeeff
+highlight!      LineNr             gui=NONE           guifg=#333333 guibg=#171717
 highlight!      Normal             gui=NONE           guifg=#ffffff guibg=#171717
+highlight!      QuickFixLine       gui=UNDERLINE      guifg=NONE    guibg=NONE
 highlight!      Search             gui=NONE           guifg=NONE    guibg=#55ddf5
 highlight!      SignColumn         gui=NONE           guifg=NONE    guibg=NONE
 highlight!      Terminal           gui=NONE           guifg=#e0e0e0 guibg=#171717
 highlight!      VertSplit          gui=NONE           guifg=#333333 guibg=#333333
+highlight!      Visual             gui=NONE           guifg=NONE    guibg=#373737
 highlight!      WildMenu           gui=NONE           guifg=#000000 guibg=#55ddf5
 
+highlight! link ErrorMsg           Error
+highlight! link Folded             Visual
+highlight! link IncSearch          Search
 highlight! link diffAdded          DiffAdd
 highlight! link diffRemoved        DiffDelete
-highlight! link IncSearch          Search
-highlight! link ErrorMsg           Error
 
 if !has('tabsidebar')
     finish
