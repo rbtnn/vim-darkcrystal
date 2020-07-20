@@ -21,16 +21,16 @@ endif
 let g:colors_name = substitute(fnamemodify(expand('<sfile>'), ':t'), '.vim', '', '')
 
 highlight!      Comment            gui=NONE           guifg=#043377 guibg=NONE
-highlight!      Constant           gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      Directory          gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      Identifier         gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      PreProc            gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      Special            gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      SpecialKey         gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      Statement          gui=NONE           guifg=#04aadd guibg=NONE
-highlight!      Title              gui=NONE           guifg=#04aadd guibg=NONE
-highlight!      Type               gui=NONE           guifg=#0455bb guibg=NONE
-highlight!      UnderLined         gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      Constant           gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      Directory          gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      Identifier         gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      PreProc            gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      Special            gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      SpecialKey         gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      Statement          gui=NONE           guifg=#04bbff guibg=NONE
+highlight!      Title              gui=NONE           guifg=#04bbff guibg=NONE
+highlight!      Type               gui=NONE           guifg=#0477bb guibg=NONE
+highlight!      UnderLined         gui=NONE           guifg=#0477bb guibg=NONE
 
 highlight!      Error              gui=NONE           guifg=#ff0000 guibg=NONE
 
@@ -62,7 +62,7 @@ highlight!      EndOfBuffer        gui=NONE           guifg=#333333 guibg=#17171
 highlight!      LineNr             gui=NONE           guifg=#333333 guibg=#171717
 highlight!      Normal             gui=NONE           guifg=#ffffff guibg=#171717
 highlight!      QuickFixLine       gui=UNDERLINE      guifg=NONE    guibg=NONE
-highlight!      Search             gui=NONE           guifg=NONE    guibg=#55ddf5
+highlight!      Search             gui=NONE           guifg=#000000 guibg=#55ddf5
 highlight!      SignColumn         gui=NONE           guifg=NONE    guibg=NONE
 highlight!      Terminal           gui=NONE           guifg=#e0e0e0 guibg=#171717
 highlight!      VertSplit          gui=NONE           guifg=#333333 guibg=#333333
