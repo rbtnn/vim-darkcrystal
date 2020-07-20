@@ -20,17 +20,17 @@ endif
 
 let g:colors_name = substitute(fnamemodify(expand('<sfile>'), ':t'), '.vim', '', '')
 
-highlight!      Comment            gui=NONE           guifg=#043355 guibg=NONE
-highlight!      Constant           gui=NONE           guifg=#045599 guibg=NONE
-highlight!      Directory          gui=NONE           guifg=#045599 guibg=NONE
-highlight!      Identifier         gui=NONE           guifg=#045599 guibg=NONE
-highlight!      PreProc            gui=NONE           guifg=#045599 guibg=NONE
-highlight!      Special            gui=NONE           guifg=#045599 guibg=NONE
-highlight!      SpecialKey         gui=NONE           guifg=#045599 guibg=NONE
+highlight!      Comment            gui=NONE           guifg=#043377 guibg=NONE
+highlight!      Constant           gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      Directory          gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      Identifier         gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      PreProc            gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      Special            gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      SpecialKey         gui=NONE           guifg=#0455bb guibg=NONE
 highlight!      Statement          gui=NONE           guifg=#04aadd guibg=NONE
 highlight!      Title              gui=NONE           guifg=#04aadd guibg=NONE
-highlight!      Type               gui=NONE           guifg=#045599 guibg=NONE
-highlight!      UnderLined         gui=NONE           guifg=#045599 guibg=NONE
+highlight!      Type               gui=NONE           guifg=#0455bb guibg=NONE
+highlight!      UnderLined         gui=NONE           guifg=#0455bb guibg=NONE
 
 highlight!      Error              gui=NONE           guifg=#ff0000 guibg=NONE
 
