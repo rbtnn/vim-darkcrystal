@@ -81,7 +81,6 @@ endif
 
 highlight!      TabSideBar          gui=NONE          cterm=NONE           guifg=#888888 guibg=#212121
 highlight!      TabSideBarFill      gui=NONE          cterm=NONE           guifg=NONE    guibg=#212121 ctermfg=NONE
-highlight!      TabSideBarTitle     gui=BOLD          cterm=BOLD           guifg=#e0e0e0 guibg=#212121
-highlight!      TabSideBarUnderline gui=UNDERLINE     cterm=UNDERLINE      guifg=#181818 guibg=#212121
-highlight! link TabSideBarSel       TabSideBar
+highlight!      TabSideBarSel       gui=BOLD          cterm=BOLD           guifg=#04aadd guibg=#212121
+highlight!      TabSideBarUnderline gui=UNDERLINE     cterm=UNDERLINE      guifg=#101010 guibg=#212121
 
