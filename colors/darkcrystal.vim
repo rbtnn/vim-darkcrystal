@@ -32,7 +32,7 @@ highlight!      Title              gui=NONE           cterm=NONE           guifg
 highlight!      Type               gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      UnderLined         gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 
-highlight!      Error              gui=NONE           cterm=NONE           guifg=#ff0000 guibg=NONE    ctermbg=NONE
+highlight!      Error              gui=NONE           cterm=NONE           guifg=#ffffff guibg=#ff0000 ctermbg=NONE
 
 highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#ffffff
 highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#000000 guibg=#cc0000
