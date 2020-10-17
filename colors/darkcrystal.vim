@@ -34,18 +34,23 @@ highlight!      UnderLined         gui=NONE           cterm=NONE           guifg
 
 highlight!      Error              gui=NONE           cterm=NONE           guifg=#ffffff guibg=#ff0000 ctermbg=NONE
 
-highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#ffffff
-highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#000000 guibg=#cc0000
+if &background == 'dark'
+    highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#ffffff
+    highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#000000 guibg=#cc0000
+else
+    highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#000000
+    highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#ffffff guibg=#cc0000
+endif
 
 highlight!      Pmenu              gui=NONE           cterm=NONE           guifg=#888888 guibg=#323232
 highlight!      PmenuSbar          gui=NONE           cterm=NONE           guifg=#000000 guibg=#323232
 highlight!      PmenuSel           gui=BOLD           cterm=BOLD           guifg=#04aadd guibg=#323232
 highlight!      PmenuThumb         gui=NONE           cterm=NONE           guifg=NONE    guibg=#ffffff ctermfg=NONE
 
-highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#888888 guibg=#333333
-highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#888888 guibg=#33333b
-highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#888888 guibg=#333333
-highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#33333b
+highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
+highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
+highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
+highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
 
 highlight!      TabLine            gui=NONE           cterm=NONE           guifg=#888888 guibg=#212121
 highlight!      TabLineFill        gui=NONE           cterm=NONE           guifg=NONE    guibg=#212121 ctermfg=NONE
@@ -58,15 +63,21 @@ highlight!      DiffText           gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg
 
 highlight!      CursorLine         gui=UNDERLINE      cterm=UNDERLINE      guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      CursorLineNr       gui=BOLD           cterm=BOLD           guifg=#04aadd guibg=#373737
-highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#333333 guibg=#171717
-highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#333333 guibg=#171717
-highlight!      Normal             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#171717
+highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
+if &background == 'dark'
+    highlight!      Normal             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#171717
+    highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#333333 guibg=#171717
+    highlight!      Visual             gui=NONE           cterm=NONE           guifg=NONE    guibg=#373737
+else
+    highlight!      Normal             gui=NONE           cterm=NONE           guifg=#000000 guibg=#fefefe
+    highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#aeaeae guibg=#fefefe
+    highlight!      Visual             gui=NONE           cterm=NONE           guifg=NONE    guibg=#67e7e7
+endif
 highlight!      QuickFixLine       gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      Search             gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      SignColumn         gui=NONE           cterm=NONE           guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      Terminal           gui=NONE           cterm=NONE           guifg=#e0e0e0 guibg=#171717
-highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#333333 guibg=#333333
-highlight!      Visual             gui=NONE           cterm=NONE           guifg=NONE    guibg=#373737
+highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#171717 guibg=#171717
 highlight!      WildMenu           gui=NONE           cterm=NONE           guifg=#000000 guibg=#55ddf5
 
 highlight! link ErrorMsg           Error
