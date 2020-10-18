@@ -20,7 +20,11 @@ endif
 
 let g:colors_name = substitute(fnamemodify(expand('<sfile>'), ':t'), '.vim', '', '')
 
-highlight!      Comment            gui=NONE           cterm=NONE           guifg=#414141 guibg=NONE    ctermbg=NONE
+if &background == 'dark'
+    highlight!      Comment            gui=NONE           cterm=NONE           guifg=#414141 guibg=NONE    ctermbg=NONE
+else
+    highlight!      Comment            gui=NONE           cterm=NONE           guifg=#a1a1a1 guibg=NONE    ctermbg=NONE
+endif
 highlight!      Constant           gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      Directory          gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      Identifier         gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
@@ -47,10 +51,19 @@ highlight!      PmenuSbar          gui=NONE           cterm=NONE           guifg
 highlight!      PmenuSel           gui=BOLD           cterm=BOLD           guifg=#04aadd guibg=#323232
 highlight!      PmenuThumb         gui=NONE           cterm=NONE           guifg=NONE    guibg=#ffffff ctermfg=NONE
 
-highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
-highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
-highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
-highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
+if &background == 'dark'
+    highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
+    highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
+    highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
+    highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
+    highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#171717 guibg=#171717
+else
+    highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e7
+    highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e8
+    highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e7
+    highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e8
+    highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#e7e7e7 guibg=#e7e7e7
+endif
 
 highlight!      TabLine            gui=NONE           cterm=NONE           guifg=#888888 guibg=#212121
 highlight!      TabLineFill        gui=NONE           cterm=NONE           guifg=NONE    guibg=#212121 ctermfg=NONE
@@ -77,7 +90,6 @@ highlight!      QuickFixLine       gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg
 highlight!      Search             gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      SignColumn         gui=NONE           cterm=NONE           guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      Terminal           gui=NONE           cterm=NONE           guifg=#e0e0e0 guibg=#171717
-highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#171717 guibg=#171717
 highlight!      WildMenu           gui=NONE           cterm=NONE           guifg=#000000 guibg=#55ddf5
 
 highlight! link ErrorMsg           Error
