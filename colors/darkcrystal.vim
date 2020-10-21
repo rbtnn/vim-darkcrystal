@@ -30,8 +30,13 @@ highlight!      Directory          gui=NONE           cterm=NONE           guifg
 highlight!      Identifier         gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      PreProc            gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      Special            gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
-highlight!      SpecialKey         gui=NONE           cterm=NONE           guifg=#214141 guibg=NONE    ctermbg=NONE
-highlight!      Statement          gui=NONE           cterm=NONE           guifg=#04bbff guibg=NONE    ctermbg=NONE
+if &background == 'dark'
+    highlight!      SpecialKey         gui=NONE           cterm=NONE           guifg=#214141 guibg=NONE    ctermbg=NONE
+    highlight!      Statement          gui=NONE           cterm=NONE           guifg=#04bbff guibg=NONE    ctermbg=NONE
+else
+    highlight!      SpecialKey         gui=NONE           cterm=NONE           guifg=#d1f1f1 guibg=NONE    ctermbg=NONE
+    highlight!      Statement          gui=NONE           cterm=NONE           guifg=#0499dd guibg=NONE    ctermbg=NONE
+endif
 highlight!      Title              gui=NONE           cterm=NONE           guifg=#04bbff guibg=NONE    ctermbg=NONE
 highlight!      Type               gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
 highlight!      UnderLined         gui=NONE           cterm=NONE           guifg=#0477bb guibg=NONE    ctermbg=NONE
@@ -58,11 +63,11 @@ if &background == 'dark'
     highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
     highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#171717 guibg=#171717
 else
-    highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e7
-    highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e8
-    highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e7
-    highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#000000 guibg=#e7e7e8
-    highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#e7e7e7 guibg=#e7e7e7
+    highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bb
+    highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bc
+    highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bb
+    highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bc
+    highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#0477bb guibg=#0477bb
 endif
 
 highlight!      TabLine            gui=NONE           cterm=NONE           guifg=#888888 guibg=#212121
