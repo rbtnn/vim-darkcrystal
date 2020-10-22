@@ -3,7 +3,7 @@ let s:flag = v:false
 
 if has('gui_running')
     let s:flag = v:true
-elseif has('termguicolors')
+elseif exists('&termguicolors')
     set termguicolors
     let s:flag = v:true
 endif
