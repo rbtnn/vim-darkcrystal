@@ -44,10 +44,10 @@ highlight!      UnderLined         gui=NONE           cterm=NONE           guifg
 highlight!      Error              gui=NONE           cterm=NONE           guifg=#ffffff guibg=#ff0000 ctermbg=NONE
 
 if &background == 'dark'
-  highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#ffffff
+  highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#cccccc
   highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#000000 guibg=#cc0000
 else
-  highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#000000
+  highlight!      Cursor             gui=NONE           cterm=NONE           guifg=#000000 guibg=#cccccc
   highlight!      CursorIM           gui=NONE           cterm=NONE           guifg=#ffffff guibg=#cc0000
 endif
 
@@ -81,15 +81,16 @@ highlight!      DiffText           gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg
 
 highlight!      CursorLine         gui=UNDERLINE      cterm=UNDERLINE      guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      CursorLineNr       gui=BOLD           cterm=BOLD           guifg=#04aadd guibg=#373737
-highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
 if &background == 'dark'
   highlight!      Normal             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#171717
   highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#333333 guibg=#171717
   highlight!      Visual             gui=NONE           cterm=NONE           guifg=NONE    guibg=#373737
+  highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
 else
   highlight!      Normal             gui=NONE           cterm=NONE           guifg=#000000 guibg=#fefefe
   highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#aeaeae guibg=#fefefe
   highlight!      Visual             gui=NONE           cterm=NONE           guifg=NONE    guibg=#67e7e7
+  highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
 endif
 highlight!      QuickFixLine       gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
 highlight!      Search             gui=BOLD,UNDERLINE cterm=BOLD,UNDERLINE guifg=NONE    guibg=NONE    ctermfg=NONE ctermbg=NONE
