@@ -57,11 +57,11 @@ highlight!      PmenuSel           gui=BOLD           cterm=BOLD           guifg
 highlight!      PmenuThumb         gui=NONE           cterm=NONE           guifg=NONE    guibg=#cccccc ctermfg=NONE
 
 if &background == 'dark'
-  highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
-  highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
-  highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#888888 guibg=#171717
-  highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#888888 guibg=#171718
-  highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#171717 guibg=#171717
+  highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#cccccc guibg=#016699
+  highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#cccccc guibg=#01669a
+  highlight!      StatusLineTerm     gui=NONE           cterm=NONE           guifg=#cccccc guibg=#016699
+  highlight!      StatusLineTermNC   gui=NONE           cterm=NONE           guifg=#cccccc guibg=#01669a
+  highlight!      VertSplit          gui=NONE           cterm=NONE           guifg=#016699 guibg=#016699
 else
   highlight!      StatusLine         gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bb
   highlight!      StatusLineNC       gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0477bc
