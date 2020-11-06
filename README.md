@@ -1,6 +1,8 @@
 
 # vim-darkcrystal
+THIS IS STILL UNDER DEVELOPMENT
 
+<!--
 This is a Vim colorscheme for Vim and Neovim.  
 Also this supports highlights of [TabSideBar](http://rbtnn.github.io/vim/).  
 
@@ -32,8 +34,8 @@ __dark version__
 __light version__
 ![](https://raw.githubusercontent.com/rbtnn/vim-darkcrystal/master/darkcrystal_light.png)
 
-
 ## License
 
 Distributed under MIT License. See LICENSE.
 
+-->
