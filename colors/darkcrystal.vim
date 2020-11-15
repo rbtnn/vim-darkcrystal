@@ -84,8 +84,8 @@ highlight!      CursorLineNr       gui=BOLD           cterm=BOLD           guifg
 highlight!      Terminal           gui=NONE           cterm=NONE           guifg=#e0e0e0 guibg=#0a0a0a
 if &background == 'dark'
     highlight!      Normal             gui=NONE           cterm=NONE           guifg=#ffffff guibg=#0a0a0a
-    highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#333333 guibg=#0a0a0a
-    highlight!      Visual             gui=NONE           cterm=NONE           guifg=#333333 guibg=#030303
+    highlight!      EndOfBuffer        gui=NONE           cterm=NONE           guifg=#111111 guibg=#0a0a0a
+    highlight!      Visual             gui=NONE           cterm=NONE           guifg=#333333 guibg=#101010
     highlight!      LineNr             gui=NONE           cterm=NONE           guifg=#888888 guibg=#0a0a0a
 else
     highlight!      Normal             gui=NONE           cterm=NONE           guifg=#000000 guibg=#fefefe
@@ -108,8 +108,8 @@ if !has('tabsidebar')
     finish
 endif
 
-highlight!      TabSideBar          gui=NONE          cterm=NONE           guifg=#888888 guibg=#212121
-highlight!      TabSideBarFill      gui=NONE          cterm=NONE           guifg=NONE    guibg=#212121 ctermfg=NONE
-highlight!      TabSideBarSel       gui=BOLD          cterm=BOLD           guifg=#04aadd guibg=#212121
-highlight!      TabSideBarUnderline gui=UNDERLINE     cterm=UNDERLINE      guifg=#101010 guibg=#212121
+highlight!      TabSideBar          gui=NONE          cterm=NONE           guifg=#888888 guibg=#101010
+highlight!      TabSideBarFill      gui=NONE          cterm=NONE           guifg=NONE    guibg=#101010 ctermfg=NONE
+highlight!      TabSideBarSel       gui=BOLD          cterm=BOLD           guifg=#04aadd guibg=#101010
+highlight!      TabSideBarUnderline gui=UNDERLINE     cterm=UNDERLINE      guifg=#000000 guibg=#101010
 
