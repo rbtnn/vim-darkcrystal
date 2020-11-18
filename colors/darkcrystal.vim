@@ -99,6 +99,7 @@ highlight!      SignColumn         gui=NONE           cterm=NONE           guifg
 highlight!      WildMenu           gui=NONE           cterm=NONE           guifg=#000000 guibg=#55ddf5
 
 highlight! link ErrorMsg           Error
+highlight! link WarningMsg         MoreMsg
 highlight! link Folded             Visual
 highlight! link IncSearch          Search
 highlight! link diffAdded          DiffAdd
